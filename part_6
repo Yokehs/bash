@@ -1,0 +1,13 @@
+#!/bin/ksh
+if [ "$#" == '0' ]
+then 
+echo 'start without param'
+fi
+
+while (( $# ))
+do
+
+echo $1
+shift
+
+done

@@ -1,0 +1,20 @@
+#!/bin/bash
+i=0
+while [ $i -le 10 ]
+do
+if [ $i -lt 5 ]
+then 
+echo "$i < 5"
+elif [ $i -eq 5 ]
+then
+echo "$i = 5" 
+elif [ $i -gt 5 ]
+then
+echo "$i > 5"
+else 
+echo "no one"
+fi
+echo $i
+i=$[ $i + 1 ]
+sleep 1
+done

@@ -1,0 +1,17 @@
+#!/bin/bash --
+#Simple scenario on bash
+number1=6 
+echo Hello World! Hello $USER!
+echo 'Example work with var:'
+echo 5+1=$number1
+echo 'Write first var:'
+read var1
+echo 'Write second var:'
+read var2
+var3=$(($var1+$var2))
+echo $var1+$var2=$var3
+echo what number more that 40?
+read var4
+test $var4 -gt 40; echo $?
+test $var4 -gt 40 && echo true || echo false
+

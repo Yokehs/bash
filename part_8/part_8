@@ -1,0 +1,22 @@
+#!/bin/ksh
+while getopts ":a:bc" option;
+do
+
+case $option in
+a)
+echo "insert a param with argument $OPTARG"
+;;
+b)
+echo "insert b param"
+;;
+c)
+echo "insert c param"
+;;
+:)
+echo "need argumet to tag -$OPTARG"
+;;
+*)
+echo "uncorrect param -$OPTARG"
+;;
+esac
+done

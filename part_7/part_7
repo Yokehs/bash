@@ -1,0 +1,4 @@
+#!/bin/bash
+. ./part_7.conf
+
+echo $valueOfApp

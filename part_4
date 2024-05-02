@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "write a and b"
+read -r a b
+c=0
+while [ $a -le $b ]
+do
+let c=c+a;
+let a++;
+done
+echo $c
